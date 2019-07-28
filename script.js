@@ -1,5 +1,5 @@
 $(function(){
-    var url = "https://script.google.com/macros/s/AKfycby-hvRIPAi9D54iIikhheREGgTRfg5BrvI5Pnb1R1_spscYD3Wq/exec"
+    var url = "https://script.google.com/macros/s/AKfycbxaAOnrlmVjy98PKH6MnWN8_vdwpvLZ0623eGBBjuugFnH2rIc/exec"
     axios.get(url)
         .then(resp => resp.data)
         .then(dados => addP(dados))
