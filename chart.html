@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas class="line-chart"></canvas>
+    <script>
+        var ctx = document.getElementsByClassName("line-chart")
+
+        var config = {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [
+                        100,
+                        80
+                    ],
+                    backgroundColor: [
+                        'rgba(14,255,26,.65)',
+                        'rgba(31,49,59,.65)'
+                    ],
+                    label: 'Dados'
+                }],
+                labels: [
+                    'Paulo',
+                    'Marcos'
+                ]
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: "Paulo e Marcos <3",
+                    fontColor: 'rgba(19,78,36,.85)',
+                    fontStyle: 'normal',
+                    fontFamily: 'Darker Grotesque',
+                    fontSize: 36
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                }
+            }
+        };
+
+        var myDoughnutChart = new Chart(ctx, config)
+
+        // Type, data and options
+
+        // var chartGraph = new Chart(ctx, {
+        //     type: 'bar',
+        //     data: {
+        //         labels: ["1", "2", "2", "4", "5"],
+        //         datasets: [{
+        //             label: "Marcos",
+        //             data: [8.5, 8.3, 8.8, 9, 8.9],
+        //             borderWidth: 2,
+        //             borderColor: 'rgba(14,255,26,.65)',
+        //             backgroundColor: 'rgba(14,255,26,.35)'
+        //         },
+        //         {
+        //             label: "Paulo",
+        //             data: [8.6, 8.7, 8.9, 8.7, 9.1],
+        //             borderWidth: 2,
+        //             borderColor: 'rgba(31,49,59,.65)',
+        //             backgroundColor: 'rgba(31,49,59,.35)'
+        //         }
+        //         ]
+        //     },
+        //     options: {
+        //         title: {
+        //             display: true,
+        //             text: "Paulo e Marcos <3",
+        //             fontColor: 'rgba(19,78,36,.85)',
+        //             fontStyle: 'normal',
+        //             fontFamily: 'Darker Grotesque',
+        //             fontSize: 36
+        //         },
+        //         scales: {
+        //             yAxes: [{
+        //                 ticks: {
+        //                     min: 7
+        //                 }
+        //             }]
+        //         }
+        //     }
+        // })
+
+
+    </script>
+</body>
+
+</html>
