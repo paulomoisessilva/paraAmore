@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="favicon.png" />
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Feedback</title>
+</head>
+
+<body>
+    <div class="principal">
+        <div class="card">
+            <div class="card-header text-center">
+                <a href="https://www.instagram.com/marcos_vinicp/" target="_blank">
+                    <img class="icon shadow"
+                        src="https://instagram.fplu3-1.fna.fbcdn.net/vp/36f029497067799885e1266e6d9127c2/5DDBF470/t51.2885-19/s150x150/26871753_895776237270484_895398396569845760_n.jpg?_nc_ht=instagram.fplu3-1.fna.fbcdn.net"
+                        alt="">
+                </a>
+                <h1>Adicione um cliente</h1>
+            </div>
+            <div class="card-body">
+                <div>
+                    <form onsubmit="return salvar(event)">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input id="nome" type="nome" class="form-control" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="idade">Idade</label>
+                            <input id="idade" type="idade" class="form-control" placeholder="Digite seu idade" required>
+                        </div>
+                        <button type="submit" class="col btn btn-primary" id="addI"
+                            url="https://script.google.com/macros/s/AKfycby-hvRIPAi9D54iIikhheREGgTRfg5BrvI5Pnb1R1_spscYD3Wq/exec">Salvar</button>
+                    </form>
+                    <ul id="adds"></ul>
+                </div>
+                <strong>
+                    <p id="sucesso" class="text-success" style="display: none">Adicionado com sucesso!</p>
+                    <p id="falha" class="text-danger" style="display: none">Ocorreu um erro ao acessar a base de dados.
+                        Entre
+                        em contato por <a href="mailto:contato@paulomoises.com?Subject=Erro%20no%20sistema"
+                            target="_top">email</a>.</p>
+                </strong>
+            </div>
+        </div>
+    </div>
+    <div class="bar">
+        <p>Made with ♥ by <strong><a href="https://www.paulomoises.com/" target="_blank">Paulo Moisés</a></strong></p>
+    </div>
+</body>
+
+</html>
