@@ -13,6 +13,20 @@ $(function(){
             erro()
             return
         })
+    setInterval(function(){
+    axios.get(url)
+        .then(resp => resp.data)
+        .then(dados => addP(dados))
+        .then(d => {
+            sucesso()
+            $("#nome").val("")
+            $("#idade").val("")
+        })
+        .catch(function (error) {
+            console.error(error)
+            erro()
+            return
+        }) }, 60000)
 })
 
 function addURL(url) {
